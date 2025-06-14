@@ -37,12 +37,12 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
             <DollarSign className="h-4 w-4 text-green-600" />
-            <span className="text-xl font-bold text-green-600">${book.price}</span>
+            <span className="text-xl font-bold text-green-600">{book.price}</span>
           </div>
           {book.originalprice > book.price && (
             <div className="text-right">
-              <p className="text-sm text-gray-500 line-through">${book.originalprice}</p>
-              <p className="text-xs text-red-600">Save ${savings}</p>
+              <p className="text-sm text-gray-500 line-through">{book.originalprice}</p>
+              <p className="text-xs text-red-600">Save {savings}</p>
             </div>
           )}
         </div>
